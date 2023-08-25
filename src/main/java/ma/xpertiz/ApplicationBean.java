@@ -11,7 +11,9 @@ public class ApplicationBean {
     @Getter
     EntityManagerFactory entityManagerFactory;
     public ApplicationBean() {
+
         entityManagerFactory = Persistence.createEntityManagerFactory("default");
+        entityManagerFactory.createEntityManager().createNativeQuery("select 1").getSingleResult();
     }
 
     public EntityManager createEntityManager() {
