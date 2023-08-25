@@ -19,6 +19,13 @@
       <property name="javax.persistence.jdbc.password" value="postgres"/>
       <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
 
+      <property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
+      <property name="eclipselink.logging.parameters" value="true"/>
+      <property name="eclipselink.query-results-cache" value="true"/>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+      <property name="eclipselink.jdbc.cache-statement" value="true"/>
+      <property name="eclipselink.cache-usage" value="CheckCacheThenDatabase"/>
+      <property name="eclipselink.logging.level" value="FINEST"/>
 
     </properties>
 

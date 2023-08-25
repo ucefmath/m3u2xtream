@@ -5,6 +5,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 import lombok.Getter;
+import ma.xpertiz.jpa.model.UserAccount;
 
 public class ApplicationBean {
 
@@ -23,4 +24,5 @@ public class ApplicationBean {
     public String getApplicationName() {
         return "Xpertiz";
     }
+
 }
