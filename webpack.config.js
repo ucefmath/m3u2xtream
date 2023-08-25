@@ -68,7 +68,7 @@ const config = {
 };
 
 module.exports = () => {
-    config.plugins = pagesConfig.map(page => new HtmlWebpackPlugin(page)).concat(config.plugins);
+    config.plugins = pagesConfig.map(page => new HtmlWebpackPlugin({...page,xhtml: true,chunksSortMode: "manual"})).concat(config.plugins);
     if (isProduction) {
         config.mode = "production";
         config.optimization = {

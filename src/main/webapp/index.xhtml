@@ -5,7 +5,17 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
-<f:view>
-    <h:outputLabel value="${applicationBean.applicationName}"/>
-</f:view>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><ui:insert name="title">Bootstrap w/ Webpack</ui:insert></title>
+</head>
+<body>
+<ui:insert name="body">
+<div class="container py-4 px-3 mx-auto">
+    <h1>Hello, Bootstrap and Webpack!</h1>
+    <button class="btn btn-secondary"><h:outputText value="#{applicationBean.applicationName}" /></button>
+</div>
+</ui:insert>
+
+</body>
 </html>
